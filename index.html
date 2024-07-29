@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Form</header>
+      <form class="form" action="#" id="calculatorform">
+        <div class="type-option">
+          <div class="type">
+            <input checked="" name="type" id="check-B" type="radio" />
+            <label for="check-B">Calculate B(λI)</label>
+          </div>
+          <div class="type">
+            <input name="type" id="check-T" type="radio" />
+            <label for="check-T">Calculate T(1/2)</label>
+          </div>
+        </div>
+        <div class="B">
+          <div class="input-box">
+            <label>Multipolarity</label>
+            <input
+              id="T-type"
+              required=""
+              placeholder="(E1-E5, M1-M5)"
+              type="text"
+            />
+            <span id="error-message-T" class="error"
+              >Multipolarity should be between E1 and E5 or between M1-M5</span
+            >
+          </div>
+          <div class="input-box">
+            <label>Lifetime</label>
+            <input id="lifetime" required="" placeholder="in ps" type="text" />
+          </div>
+          <div class="input-box">
+            <label>Error lifetime (±)</label>
+            <input id="ep" required="" placeholder="(+) ex: 0.5" type="text" />
+            <input id="em" required="" placeholder="(-) ex: 0.5" type="text" />
+          </div>
+          <div class="input-box">
+            <label>A</label>
+            <input id="mass" required="" placeholder="mass" type="text" />
+          </div>
+          <div class="input-box">
+            <label>Energy</label>
+            <input id="energy" required="" placeholder="in keV" type="text" />
+          </div>
+          <div class="input-box">
+            <label>Conversion coefficient</label>
+            <input id="coefficient" required="" placeholder="" type="text" />
+          </div>
+          <div class=""><br /><br /></div>
+          <label>Result</label>
+          <div class="result">
+            <label id="b1">B(λI)</label>
+            <br />
+            <label id="b2"></label>
+            <br />
+            <label id="b3"></label>
+          </div>
+        </div>
+
+        <div class="T">
+          <div class="input-box">
+            <label>Multipolarity</label>
+            <input
+              id="B-type"
+              required=""
+              placeholder="(E1-E5, M1-M5)"
+              type="text"
+            />
+            <span id="error-message" class="error"
+              >Multipolarity should be between E1 and E5 or between M1-M5</span
+            >
+          </div>
+          <div class="input-box">
+            <label class="type-of-B">B(X)</label>
+            <input required="" id="bx" placeholder="value of B" type="text" />
+          </div>
+          <div class="input-box">
+            <label>Weisskopf units ?</label>
+            <br />
+            <br />
+            <div id="Weisskopf">
+              <label for="radio1">Yes</label>
+              <input type="radio" name="wu" class="yes" value="yes" />
+              <label for="radio1">No</label>
+              <input type="radio" name="wu" value="no" />
+            </div>
+          </div>
+          <div class="input-box">
+            <label>A</label>
+            <input required="" id="mass2" placeholder="mass" type="text" />
+          </div>
+          <div class="input-box">
+            <label>Energy</label>
+            <input required="" id="energy2" placeholder="in keV" type="text" />
+          </div>
+          <div class=""><br /><br /></div>
+          <label>Result</label>
+          <div class="result">
+            <label id="t1">T(1/2)</label>
+            <br />
+            <label id="t2"></label>
+            <br />
+            <label id="t3"></label>
+          </div>
+        </div>
+        <button></button>
+      </form>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
